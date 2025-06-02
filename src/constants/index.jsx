@@ -31,6 +31,7 @@ import { SiDevpost } from "react-icons/si";
 // import image6 from "../assets/project6.jpeg";
 // import image7 from "../assets/project7.jpeg";
 // import image8 from "../assets/project8.jpeg";
+import bnuuys_ship from "../assets/bnuuys-ship.png";
 import toaster_project from "../assets/Toasters-project.png";
 import termiknow_p1 from "../assets/termiknow3.png";
 import roomrival_p1 from "../assets/roomrival-project.jpg";
@@ -61,12 +62,18 @@ export const PROFILE = {
 
 export const ABOUT = {
   text1:
-    "I ENJOY DEVELOPING MY SKILLS IN SOFTWARE ENGINEERING",
+    "I THRIVE ON SOLVING CHALLENGES THROUGH CODE, CREATIVITY, AND CURIOSITY.",
   text2:
-    "Hello! I'm Lily, a fourth year computer science student at The University of British Columbia with a passion for problem-solving and a deep interest in software development. I love turning complex challenges into streamlined, efficient solutions, whether it's through coding softwares, data analysis, or machine learning. My curiosity drives me to always seek to learn and grow. Beyond the classroom, I enjoy participating in hackathons and collaborating on cool projects.",
+    "Hello! I'm Lily, a fourth year computer science student at The University of British Columbia with a passion for problem-solving and a deep interest in software development. I love turning complex challenges into streamlined, efficient solutions, whether it's through coding softwares, data analysis, or machine learning. My curiosity drives me to always seek to learn and grow. Outside of coding, I enjoy singing, playing tennis, crocheting, and exploring creative side projects that blend fun with experimentation.",
 };
 
 export const EXPERIENCE = [
+  {
+    title: 'Software Engineer Intern',
+    company: 'Yakoa',
+    period: 'May 2025 - Present',
+
+  },
   {
     title: 'Software Developer Intern',
     company: 'Tartigrade Ltd.',
@@ -110,12 +117,20 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    title: "Bnuuy's Ship - a bunny rescue adventure",
+    subtitle:
+      "Built from scratch with a custom C++ game engine and OpenGL.",
+    image: bnuuys_ship,
+    link: "https://bnuuysavers.itch.io/bnuuys-ship",
+  },
+  {
     title: "termiknow - a TUI and CLI tool",
     subtitle:
       "A hackathon-winning offline TUI and CLI tool designed to support searching for custom and company-specific commands and workflows.",
     image: termiknow_p1,
     link: "https://devpost.com/software/termiknow",
-  },{
+  },
+  {
     title: "Complement Giving Website",
     subtitle:
       "A full-stack website built with React, Node.js, and MappedIn.",
