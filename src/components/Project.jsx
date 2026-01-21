@@ -1,5 +1,5 @@
 "use client";
-import Particles from "./magicui/particles";
+import Particles from "./magicui/Particles";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { PROJECTS } from "../constants"
@@ -59,15 +59,18 @@ const Projects = () => {
                     whileInView= "visible"
                     variants={containerVariants}
                     viewport={{once: true}}
-                    className="flex flex-wrap gap-x-20 gap-y-12 justify-center py-8 mx-1">
+                    className="flex flex-col gap-x-20 gap-y-12 justify-center py-8 mx-1">
                     {PROJECTS.map((Projects,index) =>(
                         <motion.div 
                             variants={itemVariants}
                             key={index}>
-                                <Card image={Projects.image}
-                                title={Projects.title}
-                                subtitle={Projects.subtitle}
-                                link={Projects.link} />
+                                <Card 
+                                    image={Projects.image}
+                                    title={Projects.title}
+                                    subtitle={Projects.subtitle}
+                                    link={Projects.link}
+                                    imageClassName={Projects.imageClassName} // Pass the className prop
+                                />
                         </motion.div>
                     ))}
                 </motion.div>

@@ -31,11 +31,14 @@ import { SiDevpost } from "react-icons/si";
 // import image6 from "../assets/project6.jpeg";
 // import image7 from "../assets/project7.jpeg";
 // import image8 from "../assets/project8.jpeg";
+import bnuuys_ship from "../assets/bnuuys-ship.png";
+import honeypot_logo from "../assets/honey_logo.png";
 import toaster_project from "../assets/Toasters-project.png";
+import termiknow_p1 from "../assets/termiknow3.png";
 import roomrival_p1 from "../assets/roomrival-project.jpg";
 // import roomrival_p2 from "../assets/roomrival-project2.jpg";
 import virtualprep_p from "../assets/virtualprep-project.png";
-import personalPortfolio from "../assets/personal-profile.png";
+// import personalPortfolio from "../assets/personal-profile.png";
 import rhythmGame from "../assets/rhythmGame.png"
 
 
@@ -60,12 +63,18 @@ export const PROFILE = {
 
 export const ABOUT = {
   text1:
-    "I'M PASSIONATE ABOUT DEVELOPING MY SKILLS IN SOFTWARE ENGINEERING",
+    "I THRIVE ON SOLVING CHALLENGES THROUGH CODE, CREATIVITY, AND CURIOSITY.",
   text2:
-    "Hello! I'm Lily, a fourth year computer science student at The University of British Columbia with a passion for problem-solving and a deep interest in software development. I love turning complex challenges into streamlined, efficient solutions, whether it's through coding softwares, data analysis, or machine learning. My curiosity drives me to always seek to learn and grow. Beyond the classroom, I enjoy participating in hackathons and collaborating on cool projects.",
+    "Hello! I'm Lily, a computer science student at The University of British Columbia with a passion for problem-solving and a deep interest in software development. I love turning complex challenges into streamlined, efficient solutions, whether it's through coding softwares, data analysis, or machine learning. My curiosity drives me to always seek to learn and grow. Outside of coding, I enjoy singing, playing tennis, crocheting, and exploring creative side projects that blend fun with experimentation.",
 };
 
 export const EXPERIENCE = [
+  {
+    title: 'Software Engineer Intern',
+    company: 'Yakoa',
+    period: 'May 2025 - Present',
+
+  },
   {
     title: 'Software Developer Intern',
     company: 'Tartigrade Ltd.',
@@ -76,7 +85,7 @@ export const EXPERIENCE = [
     //   Create visually appealing user interfaces for websites and applications.`,
   },
   {
-    title: 'Student Quantitative Analyst',
+    title: 'Quantitative Analyst Intern',
     company: 'Canada Revenue Agency',
     period: 'Sep 2023 - May 2024',
     // description: `Understood and extracted complex data from the agency data warehouse.
@@ -94,7 +103,7 @@ export const EXPERIENCE = [
     // Analyzed data for metrics to calculate and reduce carbon footprint in Vertical Farming.`,
   },
   {
-    title: 'Student, Training and Certification Development',
+    title: 'Training and Certification Development',
     company: 'Canadian Air Transport Security Authority',
     period: 'Oct 2022 - Jan 2023',
     // description: `Student, Training and Certification Development, Canadian Air Transport Security Authority 
@@ -109,26 +118,47 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
-    title: "Hackathon project: Complement Giving Website",
+    title: "Honey the Pooh - a cloud-based honeypot system",
+    subtitle:
+      "The core problem this project addresses is the early detection of internet-wide scanning by adversaries — often the first stage of a multi-stage cyber attack. Honey the Pooh automates the collection of this intelligence by deploying scattered honeypot nodes.",
+    image: honeypot_logo,
+    imageClassName: "w-86 h-120",
+    link: "https://github.com/zhangLily2020/honey-the-pooh",
+  },
+  {
+    title: "Bnuuys Ship - a bunny rescue adventure",
+    subtitle: "Built from scratch with a custom C++ game engine and OpenGL.",
+    image: bnuuys_ship,
+    link: "https://bnuuysavers.itch.io/bnuuys-ship",
+  },
+  {
+    title: "termiknow - a TUI and CLI tool",
+    subtitle:
+      "A hackathon-winning offline TUI and CLI tool designed to support searching for custom and company-specific commands and workflows.",
+    image: termiknow_p1,
+    link: "https://devpost.com/software/termiknow",
+  },
+  {
+    title: "Complement Giving Website",
     subtitle:
       "A full-stack website built with React, Node.js, and MappedIn.",
     image: toaster_project,
     link: "https://devpost.com/software/toasters",
   },
   {
-    title: "Hackathon project: Interactive Game Website",
+    title: "Interactive Game Website",
     subtitle:
       "A social media application developed using Next.js and Firebase.",
     image: roomrival_p1,
     link: "https://devpost.com/software/roomrival",
   },
-  {
-    title: "Personal Portfolio",
-    subtitle:
-      "A personal portfolio website designed with React, Node.js, and Tailwind.",
-    image: personalPortfolio,
-    link: "#",
-  },
+  // {
+  //   title: "Personal Portfolio",
+  //   subtitle:
+  //     "A personal portfolio website designed with React, Node.js, and Tailwind.",
+  //   image: personalPortfolio,
+  //   link: "#",
+  // },
   {
     title: "Music Rhythm Game",
     subtitle: "A rhythm game with custom visuals and music built with Unity and C#.",
@@ -136,7 +166,7 @@ export const PROJECTS = [
     link: "https://www.youtube.com/watch?v=Gcul3Cpx8Pk",
   },
   {
-    title: "Hackathon project: VR Interview Simulator",
+    title: "VR Interview Simulator",
     subtitle:
       "A VR simulation for interview practice built with Unity and C#.",
     image: virtualprep_p,
