@@ -64,10 +64,13 @@ const Projects = () => {
                         <motion.div 
                             variants={itemVariants}
                             key={index}>
-                                <Card image={Projects.image}
-                                title={Projects.title}
-                                subtitle={Projects.subtitle}
-                                link={Projects.link} />
+                                <Card 
+                                    image={Projects.image}
+                                    title={Projects.title}
+                                    subtitle={Projects.subtitle}
+                                    link={Projects.link}
+                                    imageClassName={Projects.imageClassName} // Pass the className prop
+                                />
                         </motion.div>
                     ))}
                 </motion.div>
