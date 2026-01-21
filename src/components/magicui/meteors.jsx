@@ -2,7 +2,7 @@
 "use client";;
 import { useEffect, useState } from "react";
 
-import { cn } from "/Users/zhang/personal-website/src/library/utils.js";
+import { cn } from "../../library/utils.js";
 
 export const Meteors = ({
   number = 20

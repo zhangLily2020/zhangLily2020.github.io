@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import {ABOUT} from "../constants"
 import {motion} from "framer-motion"
-// import Meteors from "/Users/zhang/personal-website/src/components/magicui/meteors.jsx";
+// Meteors (moved) can be imported relatively if needed
 
 const About = () => {
     const { theme } = useTheme();
